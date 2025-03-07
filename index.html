@@ -33,110 +33,116 @@
     <footer>
         <p>&copy; 2025 Pylades in the Boat Press</p>
     </footer>
+
     <style>
         /* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #fff; /* White background */
-    color: #333;
-    line-height: 1.6;
-}
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff; /* White background */
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh; /* Full height of the viewport */
+        }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-}
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
 
-header {
-    background-color: #fff; /* White header */
-    color: #333;
-    padding: 40px 0;
-    border-bottom: 2px solid #ddd; /* Light gray border for separation */
-}
+        header {
+            background-color: #fff; /* White header */
+            color: #333;
+            padding: 40px 0;
+            border-bottom: 2px solid #ddd; /* Light gray border for separation */
+            text-align: center;
+        }
 
-header .logo img {
-    max-width: 150px;
-    height: auto;
-    margin-bottom: 20px;
-}
+        header .logo img {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+        }
 
-h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-}
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
 
-.tagline {
-    font-size: 1.2em;
-    font-style: italic;
-    margin-bottom: 20px;
-    color: #ff69b4; /* Vibrant pink color for the tagline */
-}
+        .tagline {
+            font-size: 1.2em;
+            font-style: italic;
+            margin-bottom: 20px;
+            color: #ff69b4; /* Vibrant pink color for the tagline */
+        }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 20px;
-}
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
 
-nav ul li {
-    display: inline;
-    margin: 0 20px;
-}
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
 
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
 
-.main-content, .about-content {
-    padding: 60px 0;
-    background-color: #fff; /* White background for content sections */
-}
+        .main-content {
+            padding: 60px 0;
+            background-color: #fff; /* White background for content sections */
+            text-align: center;
+            flex: 1; /* Make sure it takes up available space */
+        }
 
-.main-content h2, .about-content h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
+        .main-content h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
 
-.main-content p, .about-content p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
+        .main-content p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
 
-.button {
-    background-color: #ff69b4; /* Vibrant pink button */
-    color: #fff;
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 25px;
-    font-size: 1.2em;
-    transition: background-color 0.3s ease;
-}
+        .button {
+            background-color: #ff69b4; /* Vibrant pink button */
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
 
-.button:hover {
-    background-color: #ff1493; /* Darker pink for hover effect */
-}
+        .button:hover {
+            background-color: #ff1493; /* Darker pink for hover effect */
+        }
 
-footer {
-    background-color: #fff; /* White footer */
-    color: #333;
-    padding: 20px;
-    margin-top: 40px;
-    text-align: center;
-    font-size: 1em;
-    border-top: 2px solid #ddd; /* Light gray border for footer */
-}
-
+        footer {
+            background-color: #fff; /* White footer */
+            color: #333;
+            padding: 20px;
+            text-align: center;
+            font-size: 1em;
+            border-top: 2px solid #ddd; /* Light gray border for footer */
+        }
     </style>
 </body>
 </html>
