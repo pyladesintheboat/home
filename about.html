@@ -41,73 +41,85 @@
     <footer>
         <p>&copy; 2025 Pylades in the Boat Press</p>
     </footer>
-
-    <style>
-        /* Basic Reset */
+ <style>
+        /* Reset */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #fff; /* White background */
-    color: #333;
-    line-height: 1.6;
-}
+        body {
+            font-family: 'Playfair Display', serif;
+            background-color: #fdfdfd; /* Closer to white */
+            color: #222;
+            line-height: 1.8;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+        }
 
         .container {
-            width: 80%;
+            width: 85%;
+            max-width: 900px;
             margin: 0 auto;
             text-align: center;
+            padding: 40px 0;
         }
 
         header {
-            background-color: #fff; /* White header */
-            color: #333;
-            padding: 40px 0;
-            border-bottom: 2px solid #ddd; /* Light gray border for separation */
+            background-color: #fff;
+            padding: 50px 0 20px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
         }
 
-        header .logo img {
-            max-width: 150px;
+        .logo img {
+            max-width: 200px;
             height: auto;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         h1 {
-            font-size: 3em;
+            font-size: 2.8em;
+            font-weight: 700;
             margin-bottom: 10px;
         }
 
         .tagline {
-            font-size: 1.2em;
+            font-size: 1.4em;
             font-style: italic;
-            margin-bottom: 20px;
-            color: #ff69b4; /* Vibrant pink color for the tagline */
+            color: #ff69b4;
+            margin-bottom: 30px;
         }
 
         nav ul {
             list-style: none;
             padding: 0;
-            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
         }
 
         nav ul li {
             display: inline;
-            margin: 0 20px;
         }
 
         nav ul li a {
             text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            color: #222;
+            font-weight: 600;
+            font-size: 1.1em;
+            letter-spacing: 0.5px;
+            transition: color 0.3s;
         }
 
-        .main-content, .about-content {
+        nav ul li a:hover {
+            color: #a82e5f;
+        }
+
+         .main-content, .about-content {
             padding: 60px 0;
             background-color: #fff; /* White background for content sections */
             text-align: center; /* Center the text content */
@@ -119,12 +131,17 @@ body {
             font-size: 2.5em;
             margin-bottom: 20px;
         }
-
         .main-content p, .about-content p {
             font-size: 1.2em;
             margin-bottom: 20px;
         }
-
+        footer {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #ddd;
+            font-size: 1em;
+        }
         .painting {
             margin: 40px 0;
             display: flex;
@@ -159,16 +176,7 @@ body {
         .button:hover {
             background-color: #ff1493; /* Darker pink for hover effect */
         }
-
-        footer {
-            background-color: #fff; /* White footer */
-            color: #333;
-            padding: 20px;
-            margin-top: 40px;
-            text-align: center;
-            font-size: 1em;
-            border-top: 2px solid #ddd; /* Light gray border for footer */
-        }
     </style>
+    
 </body>
 </html>
