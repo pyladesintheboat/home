@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Virgo Cutout Animation</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      background: white;
+    }
+
+    .container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      background: white;
+    }
+
+    .animated-bg {
+      position: absolute;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(45deg, #ff0080, #7928ca, #2afadf, #00ff87);
+      background-size: 400% 400%;
+      animation: moveBackground 10s infinite linear;
+      z-index: 0;
+    }
+
+    .mask {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      mask: url('41QeP9+EdsL.jpg') center/contain no-repeat;
+      -webkit-mask: url('41QeP9+EdsL.jpg') center/contain no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-repeat: no-repeat;
+      mask-size: contain;
+      -webkit-mask-size: contain;
+      z-index: 1;
+    }
+
+    @keyframes moveBackground {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="animated-bg"></div>
+    <div class="mask"></div>
+  </div>
+</body>
+</html>
