@@ -79,6 +79,21 @@ nav ul li a:hover {
   color: #ff69b4;
       text-decoration: underline;
 }
+nav ul li a.active {
+  position: relative;
+  color: #000;
+}
+
+nav ul li a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #000;
+  border-radius: 2px;
+}
 
 .about-content {
   padding: 50px 20px;
@@ -140,7 +155,7 @@ nav ul li a:hover {
       <p class="tagline">📞 Just a call away, stud</p>
       <nav>
         <ul>
-          <li><a href="about.html">Hi</a></li>
+          <li><a href="about.html" class="active">Hi</a></li>
           <li><a href="books.html">Enchiridions</a></li>
         </ul>
       </nav>
