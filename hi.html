@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Square Gradient with Image</title>
+  <title>Image over Shifting Gradient</title>
   <style>
     body {
       margin: 0;
@@ -23,6 +23,8 @@
 
     .gradient-bg {
       position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
       background: linear-gradient(45deg, red, green, blue, red);
@@ -32,11 +34,14 @@
     }
 
     .image-overlay {
-        width: 300px;
-      height: 300px;
-      position: relative;
-      background: url('transparent_white_removed.png') center/contain no-repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
       z-index: 2;
+      pointer-events: none; /* optional: lets clicks pass through */
     }
 
     @keyframes shift {
@@ -49,7 +54,8 @@
 <body>
   <div class="container">
     <div class="gradient-bg"></div>
-    <div class="image-overlay"></div>
+    <img class="image-overlay" src="transparent_white_removed-modified (1).png" alt="Overlay Image">
   </div>
 </body>
 </html>
+
