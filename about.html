@@ -3,124 +3,128 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pylades in the Boat Press</title>
-  
-  <!-- Retro fonts -->
-  <link href="<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Rubik+Glitch+Pop&display=swap" rel="stylesheet">
-  
+  <title>PYLADES IN THE BOAT</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Monoton&family=Playball&family=Newsreader:opsz,wght@6..72,400;6..72,700&display=swap" rel="stylesheet">
+
   <style>
     body {
-      background: linear-gradient(to bottom, #330000, #660033);
-      color: #ffe6f0;
-      font-family: 'Lobster Two', cursive;
-      line-height: 1.8;
+      background-color: #ffffff;
+      color: #000000;
+      font-family: 'Newsreader', serif;
       margin: 0;
       padding: 0;
       text-align: center;
     }
 
     header {
-      background: #99004d;
-      padding: 60px 20px 30px;
-      box-shadow: 0 0 30px #ff66cc;
-    }
-
-    h1 {
-      font-family: 'Rubik Glitch Pop', system-ui;
-      font-size: 3.5em;
-      color: #ffccff;
-      margin-bottom: 10px;
-    }
-
-    .tagline {
-      font-size: 1.5em;
-      color: #ff99cc;
-      text-shadow: 0 0 10px #ff66cc;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      padding: 0;
-      gap: 30px;
-      margin-top: 20px;
-    }
-
-    nav ul li a {
-      color: #ffd1dc;
-      font-weight: bold;
-      text-decoration: none;
-      font-size: 1.2em;
-      transition: color 0.3s;
-    }
-
-    nav ul li a:hover {
-      color: #ff69b4;
-      text-shadow: 0 0 5px #ff1493;
-    }
-
-    .about-content {
-      padding: 40px 20px;
-      background-color: rgba(255, 255, 255, 0.05);
-      margin: 40px auto;
-      border: 2px solid #ff66cc;
-      border-radius: 20px;
-      max-width: 800px;
-    }
-
-    .about-content p {
-      font-size: 1.3em;
-      margin-bottom: 25px;
-    }
-
-    .painting-img {
-      max-width: 90%;
-      border: 4px solid #ff69b4;
-      border-radius: 15px;
-      box-shadow: 0 0 20px #ff1493;
-      margin: 30px 0;
-    }
-
-    .button {
-      background: #ff1493;
-      color: white;
-      padding: 15px 35px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-size: 1.3em;
-      display: inline-block;
-      box-shadow: 0 0 15px #ff66cc;
-      transition: background 0.3s;
-    }
-
-    .button:hover {
-      background: #cc0066;
-    }
-
-    footer {
-      padding: 30px;
-      font-size: 1em;
-      color: #ff99cc;
-      background-color: #4d0026;
+      padding: 40px 20px 20px;
+      border-bottom: 2px solid #000;
     }
 
     .logo img {
       max-width: 180px;
       margin-bottom: 20px;
-      border: 3px solid #ff99cc;
-      border-radius: 50%;
-      box-shadow: 0 0 10px #ff1493;
     }
 
+    h1 {
+      font-family: 'Monoton', cursive;
+      font-size: 4em;
+      color: #ff4da6;
+      text-shadow:
+        0 0 5px #ff66cc,
+        0 0 10px #ff1493,
+        0 0 20px #ff4da6;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .tagline {
+      font-family: 'Playball', cursive;
+      font-size: 2.2em;
+      color: #ff69b4;
+      text-shadow:
+        0 0 5px #ff69b4,
+        0 0 10px #ff1493,
+        0 0 20px #ff1493,
+        0 0 30px #ff69b4;
+      margin-bottom: 30px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      border-top: 1px solid #000;
+      border-bottom: 1px solid #000;
+      padding: 10px 0;
+      margin: 30px 0 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ff69b4;
+    }
+
+    .about-content {
+      padding: 50px 20px;
+      max-width: 750px;
+      margin: auto;
+      border-top: 2px solid #000;
+      border-bottom: 2px solid #000;
+    }
+
+    .about-content p {
+      font-size: 1.25em;
+      margin-bottom: 25px;
+    }
+
+    .painting-img {
+      width: 100%;
+      max-width: 500px;
+      margin: 40px 0;
+      border: 2px solid #000;
+      box-shadow: 0 0 8px #ff69b4;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 1.3em;
+      font-family: 'Lobster Two', cursive;
+      color: #fff;
+      background-color: #ff69b4;
+      text-decoration: none;
+      border-radius: 30px;
+      box-shadow: 0 0 10px #ff69b4;
+      transition: background 0.3s;
+    }
+
+    .button:hover {
+      background-color: #cc0066;
+    }
+
+    footer {
+      background-color: #ffffff;
+      color: #000000;
+      font-size: 1em;
+      padding: 30px 20px;
+      border-top: 2px solid #000;
+    }
   </style>
 </head>
+
 <body>
   <header>
     <div class="container">
@@ -129,8 +133,8 @@
           <img src="logo.png" alt="Pylades Logo">
         </div>
       </a>
-      <h1>Pylades in the Boat</h1>
-      <p class="tagline">Call now for Gay Liberationist Literary Smut</p>
+      <h1>PYLADES IN THE BOAT</h1>
+      <p class="tagline">Just a call away, stud</p>
       <nav>
         <ul>
           <li><a href="about.html">Who's On the Line</a></li>
@@ -140,7 +144,7 @@
   </header>
 
   <section class="about-content">
-    <p>📞 You've reached the private line of Pylades in the Boat Press — </p>
+    <p>📞 You've reached the private line of Pylades in the Boat Press —</p>
 
     <div class="painting">
       <img src="painting.jpg" alt="Orestes and Pylades" class="painting-img">
@@ -148,13 +152,14 @@
 
     <p><i>"This is how things were, says Callicratidas, between Orestes and Pylades, about whom it was traditional to wonder, as in the case of Achilles and Patroclus, who was the lover and who the beloved. Pylades was the lover, it seems. But as they grew older, and when the time of trial came—the two friends had to decide which one would face death—the beloved behaved as the lover. One should see a model in this... In this masculine affection, the one who had been loved 'gives love in return,' and to such an extent that it becomes difficult to know 'which of the two is the erastes'; the affection of the one who loves is returned to him by the beloved the way an image is reflected in a mirror."</i></p>
 
-    <p><a href="mailto:pyladesintheboat@proton.me" class="button">Let's Talk, Daddy 💋</a></p>
+    <p><a href="mailto:pyladesintheboat@proton.me" class="button">Don't Get Too Lonely, Daddy 💋</a></p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Pylades in the Boat Press — Always Confidential, Always Hot</p>
+    &copy; 2025 Pylades in the Boat Press — Always Confidential, Always Hot
   </footer>
 </body>
 </html>
+
 
 
