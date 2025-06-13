@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enchiridions – Pylades in the Boat</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #111111;
+      font-family: 'Helvetica Neue', sans-serif;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 2rem 1rem 1rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 300;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      position: relative;
+      text-decoration: none;
+      color: #111;
+      font-size: 1rem;
+      padding: 0.25rem;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      width: 0;
+      background-color: #111;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    nav a.active::after {
+      width: 100%;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .product-box {
+      border: 1px solid #111;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #666;
+      font-size: 0.9rem;
+      transition: background 0.3s;
+    }
+
+    .product-box:hover {
+      background-color: #f7f7f7;
+    }
+
+    footer {
+      margin-top: auto;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.8rem;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pylades in the Boat</h1>
+    <nav>
+      <a href="about.html">About</a>
+      <a href="enchiridions.html" class="active">Enchiridions</a>
+    </nav>
+  </header>
+
+  <section class="product-grid">
+    <div class="product-box">
+      <!-- Add image here later -->
+      (image coming)
+    </div>
+    <div class="product-box">coming soon</div>
+  </section>
+
+  <footer>
+    &copy; 2025 Pylades in the Boat Press — Gay Liberationist Literary Smut
+  </footer>
+</body>
+</html>
