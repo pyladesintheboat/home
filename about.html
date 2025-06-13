@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About – Pylades in the Boat</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #fff;
+      color: #111;
+      font-family: 'Helvetica Neue', sans-serif;
+      line-height: 1.7;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 2rem 1rem 1rem;
+      text-align: center;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .logo {
+      margin-bottom: 1rem;
+    }
+
+    .logo img {
+      height: 50px;
+      width: auto;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 300;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      position: relative;
+      text-decoration: none;
+      color: #111;
+      font-size: 1rem;
+      padding: 0.25rem;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      width: 0;
+      background-color: #111;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    nav a.active::after {
+      width: 100%;
+    }
+
+    section.about {
+      max-width: 800px;
+      margin: 4rem auto;
+      padding: 0 1rem;
+      text-align: center;
+    }
+
+    section.about p {
+      font-size: 1.1rem;
+      color: #444;
+      margin-bottom: 2rem;
+    }
+
+    .photo-placeholder {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+      border: 1px solid #111;
+    }
+
+    .photo-placeholder img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .photo-caption {
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      color: #777;
+    }
+
+    footer {
+      margin-top: auto;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.8rem;
+      color: #999;
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Pylades in the Boat Logo">
+    </div>
+    <h1>Pylades in the Boat</h1>
+    <nav>
+      <a href="about.html" class="active">About</a>
+      <a href="enchiridions.html">Enchiridions</a>
+    </nav>
+  </header>
+
+  <section class="about">
+    <p>
+      "This is how things were, says Callicratidas, between Orestes and Pylades, about whom it was traditional to wonder, as in the case of Achilles and Patroclus, who was the lover and who the beloved... In this masculine affection, the one who had been loved 'gives love in return,' and to such an extent that it becomes difficult to know 'which of the two is the erastes'; the affection of the one who loves is returned to him by the beloved the way an image is reflected in a mirror."
+    </p>
+    <div class="photo-placeholder">
+      <img src="painting.jpg" alt="Painting">
+      <div class="photo-caption">painting</div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Pylades in the Boat Press — Gay Liberationist Literary Smut
+  </footer>
+</body>
+</html>
