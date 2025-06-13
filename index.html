@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Image over Shifting Gradient</title>
+  <title>♍︎</title>
   <style>
     body {
       margin: 0;
@@ -14,11 +14,10 @@
     }
 
     .container {
-      width: 150px;
-      height: 150px;
+      width: 600px;       /* new size */
+      height: 450px;      /* keeps 4:3 ratio */
       position: relative;
       overflow: hidden;
-      border-radius: 0px;
     }
 
     .gradient-bg {
@@ -39,22 +38,24 @@
       left: 0;
       width: 100%;
       height: 100%;
+      object-fit: contain;
       z-index: 2;
-      pointer-events: none; /* optional: lets clicks pass through */
+      pointer-events: none;
     }
 
     @keyframes shift {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
+      0%   { background-position: 0% 50%; }
+      50%  { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
     }
   </style>
 </head>
 <body>
-  <a href="about.html"><div class="container">
-    <div class="gradient-bg"></div>
-    <img class="image-overlay" src="transparent_white_removed-modified (1).png" alt="Overlay Image">
-  </div></a>
+  <a href="about.html">
+    <div class="container">
+      <div class="gradient-bg"></div>
+      <img class="image-overlay" src="transparent_white_removed-modified (1).png" alt="Overlay Image">
+    </div>
+  </a>
 </body>
 </html>
-
