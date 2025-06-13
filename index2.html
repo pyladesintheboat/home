@@ -14,8 +14,8 @@
     }
 
     .container {
-      width: 300px;
-      height: 300px;
+      width: 600px;       /* new size */
+      height: 450px;      /* keeps 4:3 ratio */
       position: relative;
       overflow: hidden;
     }
@@ -38,14 +38,14 @@
       left: 0;
       width: 100%;
       height: 100%;
-      object-fit: contain; /* Adjust if needed: try cover, scale-down, etc. */
+      object-fit: contain;
       z-index: 2;
       pointer-events: none;
     }
 
     @keyframes shift {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
+      0%   { background-position: 0% 50%; }
+      50%  { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
     }
   </style>
