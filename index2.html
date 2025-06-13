@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>♍︎</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: #FFFFFF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      width: 300px;
+      height: 300px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .gradient-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, red, green, blue, red);
+      background-size: 600% 600%;
+      animation: shift 10s ease infinite;
+      z-index: 1;
+    }
+
+    .image-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* Adjust if needed: try cover, scale-down, etc. */
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    @keyframes shift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body>
+  <a href="about.html">
+    <div class="container">
+      <div class="gradient-bg"></div>
+      <img class="image-overlay" src="transparent_white_removed-modified (1).png" alt="Overlay Image">
+    </div>
+  </a>
+</body>
+</html>
